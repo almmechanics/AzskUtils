@@ -11,7 +11,7 @@
   "author": "ALMMechanics",
   "version": {
     "Major": 0,
-    "Minor": 8,
+    "Minor": 0,
     "Patch": 0
   },
   "minimumAgentVersion": "1.83.0",
@@ -36,12 +36,12 @@
       "name": "FileExtension",
       "type": "string",
       "label": "Archive File Extension",
-      "defaultValue": "war",
+      "defaultValue": "tbc",
       "required": true,
       "helpMarkDown": "Target FileExtension"
     }
   ],
-  "instanceNameFormat": "Compress War $(Action) $(name)",
+  "instanceNameFormat": "TBC $(Action) $(name)",
   "execution": {
     "PowerShell": {
       "target": "$(currentDirectory)\\action.ps1",

@@ -29,9 +29,9 @@
         "release",
         "build",
         "archive",
-        "jar",
-        "war",
-        "ear"
+        "azsk",
+        "arm",
+        "unit"
    ],
 
   "screenshots": [
@@ -48,9 +48,6 @@
         {
           "path": "tasks/Azsk-NUnit" 
         },
-        {
-          "path": "tasks/Expand-War"
-        }
     ],
     "contributions": [
         {
