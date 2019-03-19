@@ -1,0 +1,52 @@
+{
+  "id": "2eb75f3b-1ecc-448a-ab3c-c8040487c263",
+  "name": "azsk-nunit-task",
+  "friendlyName": "Azsk NUnit Export",
+  "description": "Azsk NUnit Export",
+  "category": "Utility",
+    "visibility": [
+      "Build",
+      "Release"
+  ],
+  "author": "ALMMechanics",
+  "version": {
+    "Major": 0,
+    "Minor": 8,
+    "Patch": 0
+  },
+  "minimumAgentVersion": "1.83.0",
+  "inputs": [
+    {
+      "name": "Source",
+      "type": "filePath",
+      "label": "Source Folder",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Location of the Source Folder to be compressed"
+    },
+    {
+      "name": "Archive",
+      "type": "string",
+      "label": "Archive Name",
+      "defaultValue": "",
+      "required": true,
+      "helpMarkDown": "Name of the Archive"
+    },
+    {
+      "name": "FileExtension",
+      "type": "string",
+      "label": "Archive File Extension",
+      "defaultValue": "war",
+      "required": true,
+      "helpMarkDown": "Target FileExtension"
+    }
+  ],
+  "instanceNameFormat": "Compress War $(Action) $(name)",
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\action.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

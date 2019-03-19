@@ -1,0 +1,65 @@
+{
+  "manifestVersion": 1,
+  "id": "AzskNUnit",
+  "version": "0.0.1",
+  "name": "Utilities to support Azsk files",
+  "description": "Utilities to support azsk files",
+  "publisher": "ALMMechanics",
+  "public":  false,
+  "links": {
+    "learn": {
+      "uri": "https://almmechanics.github.com"
+    }
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+ "icons": {
+        "default": "images/logo.png"
+    },
+  "categories": [
+    "Build and release"
+  ],
+  "scopes": [
+    "vso.release"
+  ],
+   "tags": [
+        "release",
+        "build",
+        "archive",
+        "jar",
+        "war",
+        "ear"
+   ],
+
+  "screenshots": [
+   ],
+  "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+      "content": {
+        "details": { "path": "README.md" },
+        "license": { "path": "LICENSE.txt" }
+    },
+    "files": [
+        {
+          "path": "tasks/Azsk-NUnit" 
+        },
+        {
+          "path": "tasks/Expand-War"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "azsk-nunit-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": { "name": "tasks/Azsk-NUnit" }
+        }
+  ]
+}
