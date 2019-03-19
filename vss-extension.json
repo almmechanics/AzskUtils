@@ -20,7 +20,7 @@
         "default": "images/logo.png"
     },
   "categories": [
-    "Build and release"
+    "Azure Pipelines"
   ],
   "scopes": [
     "vso.release"
