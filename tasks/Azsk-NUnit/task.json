@@ -15,6 +15,18 @@
     "Patch": 1
   },
   "minimumAgentVersion": "1.83.0",
+  "groups": [
+    {
+      "name": "nunit",
+      "displayName": "NUnit Output",
+      "isExpanded": true
+    },
+    {
+      "name": "advanced",
+      "displayName": "Advanced",
+      "isExpanded": false
+    }
+  ],
   "inputs": [
     {
       "name": "cwd",
