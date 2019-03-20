@@ -12,41 +12,27 @@
   "version": {
     "Major": 0,
     "Minor": 0,
-    "Patch": 0
+    "Patch": 1
   },
   "minimumAgentVersion": "1.83.0",
   "inputs": [
     {
-      "name": "Source",
+      "name": "cwd",
       "type": "filePath",
-      "label": "Source Folder",
+      "label": "Working Directory",
       "defaultValue": "",
-      "required": true,
-      "helpMarkDown": "Location of the Source Folder to be compressed"
+      "required": false,
+      "helpMarkDown": "Current working directory where AZSK output has been stored has been run.",
+      "groupName": "advanced"
     },
     {
-      "name": "Archive",
+      "name": "outputVariable",
       "type": "string",
-      "label": "Archive Name",
-      "defaultValue": "",
-      "required": true,
-      "helpMarkDown": "Name of the Archive"
-    },
-    {
-      "name": "FileExtension",
-      "type": "string",
-      "label": "Archive File Extension",
-      "defaultValue": "tbc",
-      "required": true,
-      "helpMarkDown": "Target FileExtension"
+      "label": "Output Variable",
+      "defaultValue": "Extension.OutputPath",
+      "required": false,
+      "helpMarkDown": "The variable name to assign the location of the NUnit results",
+      "groupName": "nunit"
     }
-  ],
-  "instanceNameFormat": "TBC $(Action) $(name)",
-  "execution": {
-    "PowerShell": {
-      "target": "$(currentDirectory)\\action.ps1",
-      "argumentFormat": "",
-      "workingDirectory": "$(currentDirectory)"
-    }
-  }
+  ]
 }
