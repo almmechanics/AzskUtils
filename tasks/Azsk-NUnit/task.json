@@ -10,7 +10,7 @@
   ],
   "author": "ALMMechanics",
   "version": {
-    "Major": 0,
+    "Major": 0, 
     "Minor": 0,
     "Patch": 1
   },
@@ -29,25 +29,25 @@
   ],
   "inputs": [
     {
-      "name": "cwd",
+      "name": "AzskOutputFolder",
       "type": "filePath",
       "label": "AZSK Output folder",
       "defaultValue": "",
       "required": false,
-      "helpMarkDown": "Current working directory where AZSK output has been stored has been run.",
+      "helpMarkDown": "Working directory where AZSK output has been stored has been run.",
       "groupName": "advanced"
     },
     {
-      "name": "allowExit",
+      "name": "EnableExit",
       "type": "boolean",
-      "label": "Failing tests as error.",
+      "label": "Failing tests report as errors",
       "defaultValue": "true",
       "required": false,
       "helpMarkDown": "Allow Failing tests to report back as an error within the pipeline.",
       "groupName": "advanced"
     },
     {
-      "name": "outputVariable",
+      "name": "OutputVariable",
       "type": "string",
       "label": "Output Variable",
       "defaultValue": "NUnit.OutputPath",
@@ -55,5 +55,13 @@
       "helpMarkDown": "The variable name to assign the location of the NUnit results",
       "groupName": "nunit"
     }
-  ]
+  ],
+  "instanceNameFormat": "Convert AZSK to NUnit output",
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\action.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
 }
