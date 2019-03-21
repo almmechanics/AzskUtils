@@ -1,35 +1,23 @@
 param
 (
     [string]
-    $Source,
+    $AzskOutputFolder,
     [string]
-    $Archive,
-    [string]
-    $FileExtension,
-    [switch]
-    $Clean,
-    [switch]
-    $UseProxy
+    $EnableExit
 )
 
 $moduleFolder = "$pwd\modules"
 
-Write-Host ('Loading WarHelper module from {0}' -f $moduleFolder)
-Import-Module $moduleFolder\WarHelper\WarHelper.psd1 -verbose
+Write-Host ('Loading azskhelper module from {0}' -f $moduleFolder)
+Import-Module $moduleFolder\azskhelper\azskhelper.psd1 -verbose
 
-if (get-module -name 'WarHelper')
+if (get-module -name 'azskhelper')
 {
-  Write-Host 'WarHelper module loaded'
+  Write-Host 'azskhelper module loaded'
 
-  if ($UseProxy)
-  {
-      Write-Host 'Using Proxy for PowerShell'
-      [System.Net.WebRequest]::DefaultWebProxy.Credentials = [System.Net.CredentialCache]::DefaultCredentials 
-  }
-
-  Azsk-NUnit -Source $Source -Archive $Archive -Extension $FileExtension -Clean:$Clean
+  Publish-AzskNUnit -AzskOutputFolder $AzskOutputFolder -EnableExit:$EnableExit
 }
 else
 {
-      Write-Host "##vso[task.logissue type=error;]Unable to load WarHelper module"
+  Write-Host "##vso[task.logissue type=error;]Unable to load azskhelper module"
 }
