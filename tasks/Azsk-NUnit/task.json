@@ -12,7 +12,7 @@
   "version": {
     "Major": 0, 
     "Minor": 1,
-    "Patch": 0
+    "Patch": 1
   },
   "minimumAgentVersion": "1.83.0",
   "groups": [
@@ -50,7 +50,7 @@
       "name": "OutputVariable",
       "type": "string",
       "label": "Output Variable",
-      "defaultValue": "NUnit.OutputPath",
+      "defaultValue": "TEST-azsk.nunit.xml",
       "required": false,
       "helpMarkDown": "The variable name to assign the location of the NUnit results",
       "groupName": "nunit"
