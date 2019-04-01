@@ -18,12 +18,12 @@ if (get-module -name 'azskhelper')
   if ($EnableExit -eq [bool]::TrueString)
   {
       Write-Verbose 'Publish-AzskNUnit with Exit Enabled'
-      Publish-AzskNUnit -AzskOutputFolder $AzskOutputFolder -EnableExit
+      Publish-AzskNUnit -Path $AzskOutputFolder -EnableExit
   }
   else
   {
       Write-Verbose 'Publish-AzskNUnit without Exit Enabled'
-      Publish-AzskNUnit -AzskOutputFolder $AzskOutputFolder
+      Publish-AzskNUnit -Path $AzskOutputFolder
   }
 }
 else
