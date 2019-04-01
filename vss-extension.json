@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "AzskNUnit",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "name": "Utilities to support Azsk files",
   "description": "Utilities to support azsk files",
   "publisher": "ALMMechanics",
