@@ -11,8 +11,8 @@
   "author": "ALMMechanics",
   "version": {
     "Major": 0, 
-    "Minor": 1,
-    "Patch": 8
+    "Minor": 2,
+    "Patch": 0
   },
   "minimumAgentVersion": "1.83.0",
   "groups": [
@@ -50,7 +50,7 @@
       "name": "OutputVariable",
       "type": "string",
       "label": "Output Variable",
-      "defaultValue": "TEST-azsk.nunit.xml",
+      "defaultValue": "AZSK.NUnit.OutputPath",
       "required": false,
       "helpMarkDown": "The variable name to assign the location of the NUnit results",
       "groupName": "nunit"
