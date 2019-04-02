@@ -3,6 +3,8 @@ param
     [string]
     $AzskOutputFolder,
     [string]
+    $OutputVariable,
+    [string]
     $EnableExit
 )
 
