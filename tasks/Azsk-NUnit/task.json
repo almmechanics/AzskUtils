@@ -1,8 +1,8 @@
 {
   "id": "2eb75f3b-1ecc-448a-ab3c-c8040487c263",
   "name": "azsk-nunit-task",
-  "friendlyName": "Azsk NUnit Export",
-  "description": "Azsk NUnit Export",
+  "friendlyName": "AzSK NUnit Converter",
+  "description": "AzSK Output to NUnit Converter",
   "category": "Utility",
     "visibility": [
       "Build",
@@ -12,7 +12,7 @@
   "version": {
     "Major": 0, 
     "Minor": 2,
-    "Patch": 0
+    "Patch": 1
   },
   "minimumAgentVersion": "1.83.0",
   "groups": [
@@ -31,10 +31,10 @@
     {
       "name": "AzskOutputFolder",
       "type": "filePath",
-      "label": "AZSK Output folder",
+      "label": "AzSK Output folder",
       "defaultValue": "",
       "required": false,
-      "helpMarkDown": "Working directory where AZSK output has been stored has been run.",
+      "helpMarkDown": "Working directory where AzSK output has been stored has been run.",
       "groupName": "advanced"
     },
     {
@@ -51,12 +51,12 @@
       "type": "string",
       "label": "Output Variable",
       "defaultValue": "AZSK.NUnit.OutputPath",
-      "required": false,
+      "required": true,
       "helpMarkDown": "The variable name to assign the location of the NUnit results",
       "groupName": "nunit"
     }
   ],
-  "instanceNameFormat": "Convert AZSK to NUnit output",
+  "instanceNameFormat": "Convert AzSK to NUnit output",
   "execution": {
     "PowerShell": {
       "target": "$(currentDirectory)\\action.ps1",

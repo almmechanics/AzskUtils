@@ -1,5 +1,5 @@
 #Introduction 
-A simple utility to convert AZSK output to NUNIT style for use in Azure DevOps
+A simple utility to convert AzSK output to NUnit style for use in Azure DevOps
 
 #Getting Started
 TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
