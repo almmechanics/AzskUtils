@@ -7,8 +7,9 @@
   "publisher": "ALMMechanics",
   "public":  false,
   "links": {
-    "support": {
-      "uri": "https://github.com/almmechanics/AzskUtils"
+    "repository": {
+      "type": "git",
+     "uri": "https://github.com/almmechanics/AzskUtils"
     }
   },
   "targets": [
