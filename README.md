@@ -11,6 +11,13 @@ This tool can be dropped in between the  `AzSK_ArmplateChecker` and `Publish Tes
 
 ![image](./images/AzSK_Image.png)
 
+## Output
+
+The following image shows the NUnit output of the AzSK analysis of the `101-1vm-2nics-2subnets-1vnet` subfolder from the https://github.com/Azure/azure-quickstart-templates repository
+
+
+![image](./images/example_output.png)
+
 ## Extension Features
 1. The NUnit tests are exported as an Output variable; the default value for this is `AZSK.NUnit.OutputPath`.
 
