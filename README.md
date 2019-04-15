@@ -9,7 +9,7 @@ This tool requires the AzSK toolkit to be installed within the same pipleine. Mo
 # Build and Test
 This tool can be dropped in between the  `AzSK_ArmplateChecker` and `Publish Test Results` Azure DevOps Tasks as shown below
 
-![image](images/AzSK_Image.png)
+![image](./images/AzSK_Image.png)
 
 ## Extension Features
 1. The NUnit tests are exported as an Ouytput varibale, the default value for this is `AZSK.NUnit.OutputPath`.
