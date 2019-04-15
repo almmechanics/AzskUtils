@@ -6,13 +6,13 @@ The tool uses [Pester](https://github.com/pester/Pester) as the conversion engin
 # Getting Started
 This tool requires the AzSK toolkit to be installed within the same pipleine. More information on this can be found in [azsk](https://azsk.azurewebsites.net)
 
-# Build and Test
+# Build and Deployment pipeline usage
 This tool can be dropped in between the  `AzSK_ArmplateChecker` and `Publish Test Results` Azure DevOps Tasks as shown below
 
 ![image](./images/AzSK_Image.png)
 
 ## Extension Features
-1. The NUnit tests are exported as an Ouytput varibale, the default value for this is `AZSK.NUnit.OutputPath`.
+1. The NUnit tests are exported as an Output variable; the default value for this is `AZSK.NUnit.OutputPath`.
 
 1. Failing Tests can also be reported as errors - useful in PR and CI use cases.
 
