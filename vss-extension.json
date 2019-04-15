@@ -47,6 +47,10 @@
     "files": [
         {
           "path": "tasks/Azsk-NUnit" 
+        },
+        {
+            "path": "images",
+            "addressable": true
         }
     ],
     "contributions": [
