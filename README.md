@@ -19,4 +19,4 @@ This tool can be dropped in between the  `AzSK_ArmplateChecker` and `Publish Tes
 # Contribute
 To assist in the development of this extension then please contact me via azsk@almmechanics.com.
 
-If you have any issues with the tool, then please add issues via  https://github.com/almmechanics/AzskUtils
+If you have any issues/feature requests then please add comment via  https://github.com/almmechanics/AzskUtils
