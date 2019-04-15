@@ -19,7 +19,7 @@
     {
       "name": "nunit",
       "displayName": "NUnit Output",
-      "isExpanded": true
+      "isExpanded": false
     },
     {
       "name": "advanced",
@@ -41,7 +41,7 @@
       "name": "EnableExit",
       "type": "boolean",
       "label": "Failing tests report as errors",
-      "defaultValue": "true",
+      "defaultValue": "false",
       "required": false,
       "helpMarkDown": "Allow Failing tests to report back as an error within the pipeline.",
       "groupName": "advanced"
