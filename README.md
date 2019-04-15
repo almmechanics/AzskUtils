@@ -27,4 +27,4 @@ The following image shows the NUnit output of the AzSK analysis of the `101-1vm-
 # Contribute
 To assist in the development of this extension then please contact me via azsk@almmechanics.com.
 
-If you have any issues/feature requests then please add comment via  https://github.com/almmechanics/AzskUtils
+If you have any issues/feature requests then add them through https://github.com/almmechanics/AzskUtils
