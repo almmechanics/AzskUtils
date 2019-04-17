@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "AzskNUnit",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "name": "Utilities to support AzSK files",
   "description": "Utilities to support AzSK files",
   "publisher": "ALMMechanics",
@@ -32,9 +32,10 @@
         "archive",
         "azsk",
         "arm",
-        "unit"
+        "unit",
+        "CI",
+        "CD"
    ],
-
   "screenshots": [
    ],
   "branding": {
