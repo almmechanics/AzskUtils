@@ -1,8 +1,8 @@
 {
-  "id": "2eb75f3b-1ecc-448a-ab3c-c8040487c263",
-  "name": "azsk-nunit-task",
-  "friendlyName": "AzSK NUnit Converter",
-  "description": "AzSK Output to NUnit Converter",
+  "id": "4b464674-b857-4214-84a2-e34c72021ac9",
+  "name": "azsk-svt-nunit-task",
+  "friendlyName": "AzSK SVT NUnit Converter",
+  "description": "AzSK SVT Output to NUnit Converter",
   "category": "Utility",
     "visibility": [
       "Build",

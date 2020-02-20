@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "AzskNUnit",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "name": "Utilities to support AzSK files",
   "description": "Utilities to support AzSK files",
   "publisher": "ALMMechanics",
@@ -51,6 +51,9 @@
           "path": "tasks/Azsk-NUnit" 
         },
         {
+          "path": "tasks/Azsk-svt-NUnit" 
+        },        
+        {
             "path": "images",
             "addressable": true
         }
@@ -63,6 +66,14 @@
                 "ms.vss-distributed-task.tasks"
             ],
             "properties": { "name": "tasks/Azsk-NUnit" }
-        }
+        },
+        {
+          "id": "azsk-svt-nunit-task",
+          "type": "ms.vss-distributed-task.task",
+          "targets": [
+              "ms.vss-distributed-task.tasks"
+          ],
+          "properties": { "name": "tasks/Azsk-svt-NUnit" }
+      }
   ]
 }
