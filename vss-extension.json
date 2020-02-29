@@ -1,15 +1,15 @@
 {
   "manifestVersion": 1,
   "id": "AzskNUnit",
-  "version": "1.4.11",
+  "version": "1.4.12",
   "name": "Utilities to support AzSK files",
   "description": "Utilities to support AzSK files",
   "publisher": "ALMMechanics",
-  "public":  false,
+  "public": false,
   "links": {
     "repository": {
       "type": "git",
-     "uri": "https://github.com/almmechanics/AzskUtils"
+      "uri": "https://github.com/almmechanics/AzskUtils"
     }
   },
   "targets": [
@@ -17,63 +17,70 @@
       "id": "Microsoft.VisualStudio.Services"
     }
   ],
- "icons": {
-        "default": "images/logo.png"
-    },
+  "icons": {
+    "default": "images/logo.png"
+  },
   "categories": [
     "Azure Pipelines"
   ],
   "scopes": [
     "vso.release"
   ],
-   "tags": [
-        "release",
-        "build",
-        "archive",
-        "azsk",
-        "arm",
-        "unit",
-        "CI",
-        "CD"
-   ],
-  "screenshots": [
-   ],
+  "tags": [
+    "release",
+    "build",
+    "archive",
+    "azsk",
+    "arm",
+    "unit",
+    "CI",
+    "CD"
+  ],
+  "screenshots": [],
   "branding": {
-        "color": "rgb(34, 34, 34)",
-        "theme": "dark"
+    "color": "rgb(34, 34, 34)",
+    "theme": "dark"
+  },
+  "content": {
+    "details": {
+      "path": "README.md"
     },
-      "content": {
-        "details": { "path": "README.md" },
-        "license": { "path": "LICENSE.txt" }
+    "license": {
+      "path": "LICENSE.txt"
+    }
+  },
+  "files": [
+    {
+      "path": "tasks/Azsk-NUnit"
     },
-    "files": [
-        {
-          "path": "tasks/Azsk-NUnit" 
-        },
-        {
-          "path": "tasks/Azsk-svt-NUnit" 
-        },        
-        {
-            "path": "images",
-            "addressable": true
-        }
-    ],
-    "contributions": [
-        {
-            "id": "azsk-nunit-task",
-            "type": "ms.vss-distributed-task.task",
-            "targets": [
-                "ms.vss-distributed-task.tasks"
-            ],
-            "properties": { "name": "tasks/Azsk-NUnit" }
-        },
-        {
-          "id": "azsk-svt-nunit-task",
-          "type": "ms.vss-distributed-task.task",
-          "targets": [
-              "ms.vss-distributed-task.tasks"
-          ],
-          "properties": { "name": "tasks/Azsk-svt-NUnit" }
+    {
+      "path": "tasks/Azsk-svt-NUnit"
+    },
+    {
+      "path": "images",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "azsk-nunit-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "tasks/Azsk-NUnit"
       }
+    },
+    {
+      "id": "azsk-svt-nunit-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "tasks/Azsk-svt-NUnit"
+      }
+    }
   ]
 }
