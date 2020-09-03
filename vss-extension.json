@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "AzskNUnit",
-  "version": "1.4.12",
+  "version": "1.4.13",
   "name": "Utilities to support AzSK files",
   "description": "Utilities to support AzSK files",
   "publisher": "ALMMechanics",
@@ -10,7 +10,23 @@
     "repository": {
       "type": "git",
       "uri": "https://github.com/almmechanics/AzskUtils"
+    },
+    "privacypolicy": {
+      "uri": "https://github.com/almmechanics/AzskUtils/privacy.md"
+    },
+    "support": {
+      "uri": "https://github.com/almmechanics/AzskUtils/issues"
+    },
+    "getstarted": {
+      "uri": "https://github.com/almmechanics/AzskUtils"
+    },
+    "license": {
+      "uri": "https://github.com/almmechanics/AzskUtils/blob/master/License.txt"
     }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/almmechanics/AzskUtils"
   },
   "targets": [
     {
