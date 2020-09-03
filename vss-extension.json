@@ -10,8 +10,31 @@
     "repository": {
       "type": "git",
       "uri": "https://github.com/almmechanics/AzskUtils"
+    },
+    "privacypolicy": {
+      "uri": "https://github.com/almmechanics/AzskUtils/privacy.md"
+    }
+    "support": {
+      "uri": "https://github.com/almmechanics/AzskUtils/issues"
+    },
+    "getstarted": {
+      "uri": "https://github.com/almmechanics/AzskUtils"
+    },
+    "license": {
+      "uri": "https://github.com/almmechanics/AzskUtils/blob/master/License.txt"
     }
   },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/almmechanics/AzskUtils"
+  },
+  "badges": [
+    {
+      "href": "https://almmechanics.visualstudio.com/DevSecOps/_apis/build/status/azuk_utils_ci",
+      "uri": "https://almmechanics.visualstudio.com/DevSecOps/_build/latest?definitionId=45",
+      "description": "Azure DevOps CI for the project"
+    }
+  ],
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
