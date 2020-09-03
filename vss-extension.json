@@ -28,13 +28,6 @@
     "type": "git",
     "uri": "https://github.com/almmechanics/AzskUtils"
   },
-  "badges": [
-    {
-      "href": "https://almmechanics.visualstudio.com/DevSecOps/_apis/build/status/azuk_utils_ci",
-      "uri": "https://almmechanics.visualstudio.com/DevSecOps/_build/latest?definitionId=45",
-      "description": "Azure DevOps CI for the project"
-    }
-  ],
   "targets": [
     {
       "id": "Microsoft.VisualStudio.Services"
