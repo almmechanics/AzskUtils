@@ -1,8 +1,6 @@
 [submodule "tasks/Azsk-NUnit/ps_modules/azskhelper"]
 	path = tasks/Azsk-NUnit/ps_modules/azskhelper
 	url = https://github.com/almmechanics/azskhelper.git
-	branch = pester5
 [submodule "tasks/Azsk-svt-NUnit/ps_modules/azskhelper"]
 	path = tasks/Azsk-svt-NUnit/ps_modules/azskhelper
 	url = https://github.com/almmechanics/azskhelper.git
-	branch = pester5
